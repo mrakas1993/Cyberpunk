@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Archangelsk";
+  src: url("../fonts/Archangelsk.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+header {
+  background: url("../img/header-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.header-top {
+  padding-top: 20px;
+  padding-bottom: 537px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social {
+  display: flex;
+}
+.social > li {
+  margin-right: 40px;
+}
+.social > li:last-child {
+  margin-right: 0;
+}
+.header-bottom {
+  display: flex;
+  justify-content: flex-end;
+}
+.header-info {
+  background-color: #f8f200;
+  padding: 70px;
+  background: linear-gradient(135deg, transparent 52px, #f8f200 0) top left,
+  linear-gradient(-45deg, transparent 52px, #f8f200 0) bottom right;
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+}
+
+.header-info > h1 {
+  color: #000;
+  font-family: "Archangelsk";
+  font-size: 62px;
+  font-weight: 400;
+  max-width: 484px;
+  padding-bottom: 25px;
+}
+.header-info > button {
+  color: #f8f200;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 166.667%;
+  padding: 19px 50px;
+  background: #000;
+  cursor: pointer;
+}
