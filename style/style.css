@@ -57,7 +57,7 @@ header {
   padding: 70px;
   background: linear-gradient(135deg, transparent 52px, #f8f200 0) top left,
   linear-gradient(-45deg, transparent 52px, #f8f200 0) bottom right;
-  background-size: 100% 50%;
+  background-size: 100% 51%;
   background-repeat: no-repeat;
 }
 
@@ -78,4 +78,187 @@ header {
   padding: 19px 50px;
   background: #000;
   cursor: pointer;
+}
+.title{
+  padding-top: 70px;
+  color: #000;
+  font-family: "Archangelsk";
+  font-size: 62px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+.text{
+  color: #777;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 188.9%;
+  max-width: 952px;
+  margin-bottom: 70px;
+}
+.text>span{
+  color: #52BEDC;
+  font-weight: 700;
+}
+.box{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 85px;
+}
+.item1{
+  width: 460px; 
+}
+.photo1{
+  background: url('../img/photo1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 196px;
+  margin-bottom: 32px;
+  position: relative;
+  clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0 100%, 0% 20%);
+}
+.photo1:last-child{
+  margin-bottom: 0;
+  background: url('../img/photo2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.item2{
+  width: 788px;
+
+}
+.photo2{
+  background: url('../img/photo3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 424px;
+}
+.yellow{
+  background: #F8F200;
+  padding: 70px 0;
+}
+.yellow-box{
+  display: flex;
+  justify-content: space-between;
+}
+.monitor{
+  padding-bottom: 26px;
+}
+.logo-company{
+  display: flex;
+  align-items: center;
+  margin: 0 42px;
+}
+.x{
+  margin: 0 25px;
+}
+.yellow-box2>h2{
+  color: #000;
+  font-family: 'Archangelsk';
+  font-size: 62px;
+  font-weight: 400;
+  width: 560px;
+}
+.yellow-box2>p{
+  color: #000;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 188.9%;
+  width: 624px;
+  padding: 25px 0;  
+}
+.yellow-box2>ul>li{
+  color: #000;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 26px;
+  display: flex;
+  align-items: center;
+}
+.yellow-box2>ul>li:last-child{
+  padding-bottom: 40px;
+}
+.yellow-box2>ul>li>img{
+  margin-right: 10px;
+}
+.yellow-box2>button{
+  background: #000;
+  padding: 15px 50px;
+  color: #F8F200;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 700;
+}
+.buy{
+  display: flex;
+}
+.buy-bg{
+  flex-basis: 45%;
+  background: url('../img/buy-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.buy-info{
+  flex-basis: 55%;
+  background: #000;
+  padding: 70px 0 70px 32px;
+}
+.buy-info>h2{
+  color: #FFF;
+  font-family: 'Archangelsk';
+  font-size: 62px;
+  font-weight: 400;
+  padding-bottom: 25px;
+  max-width: 488px;
+}
+.buy-info>span{
+  color: #52BEDC;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 700;
+
+}
+.buy-info>ul{
+  padding-top: 21px;
+}
+.buy-info>ul>li{
+  display: flex;
+  align-items: center;
+  color: #FFF;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+.buy-info>ul>li:last-child{
+  padding-bottom: 70px;
+}
+.buy-info>ul>li>img{
+  margin-right: 10px;
+}
+
+
+/* адаптив */
+@media (max-width:1024px){
+  header{
+    background-position-x:center ;
+  }
+  .yellow-box2>h2,.yellow-box2>p{
+    max-width: 460px;
+  }
+  .monitor{
+    max-width: 460px;
+  }
+  .logo-company{
+    flex-direction: column;
+    margin: 0;
+  }
+  .title{
+    max-width: 620px;
+  }
+  .text{
+    max-width: 788px;
+  }
 }
